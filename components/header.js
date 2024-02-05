@@ -50,6 +50,9 @@ const Header = (props) => {
           .header-image {
             height: var(--dl-size-size-small);
           }
+          .header-nav {
+            padding-top: 24px;
+          }
           .header-accordion-header {
             display: flex;
             align-items: center;

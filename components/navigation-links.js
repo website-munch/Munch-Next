@@ -29,9 +29,6 @@ const NavigationLinks = (props) => {
             margin-left: var(--dl-space-space-twounits);
           }
 
-          .navigation-links-root-class-name19 {
-            margin-top: 24px;
-          }
           @media (max-width: 767px) {
             .navigation-links-nav {
               align-items: flex-start;

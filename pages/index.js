@@ -111,7 +111,7 @@ const Home = (props) => {
           .home-container1 {
             width: 100%;
             display: flex;
-            min-height: 100vh;
+            min-height: 906px;
           }
           .home-container2 {
             flex: 0 0 auto;
