@@ -30,24 +30,19 @@ const NavigationLinks = (props) => {
           }
 
           @media (max-width: 767px) {
-            .navigation-links-nav {
-              align-items: flex-start;
-              flex-direction: column;
-            }
             .navigation-links-text {
-              margin-bottom: var(--dl-space-space-unit);
+              margin-right: var(--dl-space-space-unit);
             }
             .navigation-links-text1 {
               margin-left: 0;
-              margin-bottom: var(--dl-space-space-unit);
+              margin-right: var(--dl-space-space-unit);
             }
             .navigation-links-text2 {
               margin-left: 0;
-              margin-bottom: var(--dl-space-space-unit);
+              margin-right: var(--dl-space-space-unit);
             }
             .navigation-links-text3 {
               margin-left: 0;
-              margin-bottom: var(--dl-space-space-unit);
             }
           }
         `}
@@ -57,19 +52,19 @@ const NavigationLinks = (props) => {
 }
 
 NavigationLinks.defaultProps = {
-  text0: 'MUNCH24',
-  text3: 'Support',
-  text1: 'People',
-  rootClassName: '',
   text2: 'Information',
+  text3: 'Support',
+  text0: 'MUNCH24',
+  rootClassName: '',
+  text1: 'People',
 }
 
 NavigationLinks.propTypes = {
-  text0: PropTypes.string,
-  text3: PropTypes.string,
-  text1: PropTypes.string,
-  rootClassName: PropTypes.string,
   text2: PropTypes.string,
+  text3: PropTypes.string,
+  text0: PropTypes.string,
+  rootClassName: PropTypes.string,
+  text1: PropTypes.string,
 }
 
 export default NavigationLinks

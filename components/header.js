@@ -34,7 +34,7 @@ const Header = (props) => {
         {`
           .header-header {
             width: auto;
-            height: 15%;
+            height: 10%;
             display: flex;
             position: relative;
             max-width: auto;
@@ -54,7 +54,7 @@ const Header = (props) => {
             padding-top: 24px;
           }
           .header-accordion-header {
-            display: flex;
+            display: none;
             align-items: center;
             flex-direction: column;
           }
@@ -64,7 +64,7 @@ const Header = (props) => {
             display: none;
           }
           .header-accordion-content {
-            display: flex;
+            display: none;
             overflow: hidden;
             max-height: 0;
             transition: 0.3s ease-in-out;
@@ -80,11 +80,19 @@ const Header = (props) => {
             top: 0px;
             left: 0px;
             right: 0px;
-            height: 15%;
+            height: auto;
             margin: auto;
             position: absolute;
           }
+          @media (max-width: 1200px) {
+            .header-header {
+              height: 7.5%;
+            }
+          }
           @media (max-width: 991px) {
+            .header-header {
+              height: 5%;
+            }
             .header-nav1 {
               padding-top: 16px;
             }
@@ -93,9 +101,6 @@ const Header = (props) => {
             .header-header {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
-            }
-            .header-nav {
-              display: none;
             }
             .header-icon {
               display: flex;
@@ -114,14 +119,14 @@ const Header = (props) => {
 
 Header.defaultProps = {
   imageSrc: '/munch_logo-200h.png',
-  imageAlt: 'logo',
   rootClassName: '',
+  imageAlt: 'logo',
 }
 
 Header.propTypes = {
   imageSrc: PropTypes.string,
-  imageAlt: PropTypes.string,
   rootClassName: PropTypes.string,
+  imageAlt: PropTypes.string,
 }
 
 export default Header

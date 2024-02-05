@@ -8,8 +8,8 @@ const Footer = (props) => {
       <footer className={`footer-footer ${props.rootClassName} `}>
         <div className="footer-container">
           <img
-            src={props.imageSrc}
             alt={props.imageAlt}
+            src={props.imageSrc}
             className="footer-image"
           />
           <div className="footer-container1">
@@ -87,7 +87,7 @@ const Footer = (props) => {
       <style jsx>
         {`
           .footer-footer {
-            height: 22.5%;
+            height: 15%;
             display: flex;
             align-items: center;
             padding-top: var(--dl-space-space-twounits);
@@ -103,7 +103,7 @@ const Footer = (props) => {
             height: auto;
             display: flex;
             align-items: space-between;
-            padding-right: var(--dl-space-space-sixunits);
+            margin-right: 96px;
             flex-direction: column;
           }
           .footer-image {
@@ -241,11 +241,11 @@ const Footer = (props) => {
             margin-bottom: var(--dl-space-space-unit);
           }
           .footer-root-class-name {
-            top: 77.5%;
+            top: 82.5%;
             left: 0px;
             right: 0px;
             width: var(--dl-size-size-maxwidth);
-            height: 22.5%;
+            height: 15%;
             position: absolute;
             max-width: var(--dl-size-size-maxwidth);
             margin-top: auto;
@@ -253,12 +253,41 @@ const Footer = (props) => {
             margin-right: auto;
             margin-bottom: auto;
           }
-          @media (max-width: 991px) {
-            .footer-footer {
-              flex-direction: column;
+          @media (max-width: 1600px) {
+            .footer-root-class-name {
+              top: 85%;
             }
+          }
+          @media (max-width: 1200px) {
+            .footer-footer {
+              height: 10%;
+            }
+            .footer-container {
+              margin-right: 32px;
+            }
+            .footer-container3 {
+              margin-right: 32px;
+            }
+            .footer-container4 {
+              margin-right: 32px;
+            }
+            .footer-container5 {
+              margin-right: 32px;
+            }
+            .footer-root-class-name {
+              top: 90%;
+              width: auto;
+              height: auto;
+              max-width: auto;
+            }
+          }
+          @media (max-width: 991px) {
             .footer-container1 {
               align-items: center;
+            }
+            .footer-root-class-name {
+              top: 88.75%;
+              width: 100%;
             }
           }
           @media (max-width: 767px) {
@@ -292,56 +321,56 @@ const Footer = (props) => {
 
 Footer.defaultProps = {
   imageSrc: '/munch_logo-200h.png',
-  imageAlt: 'image',
-  text: 'MUNCH 24',
-  text1: 'Committees',
-  text2: 'Timetable',
-  text3: 'Country Allocation',
-  text4: 'Briefing Papers',
-  text5: 'People',
-  text6: 'Officials',
-  text7: 'Chairs',
-  text8: 'Press',
-  text9: 'Infrastructure\n',
-  text10: 'Information',
-  text11: 'Advisors',
-  text12: 'Delegates',
-  text13: 'Charity',
-  text14: '',
-  text15: 'Support',
   text16: 'Contact',
-  text17: 'Privacy Policy',
-  text18: 'Technical Support',
+  imageAlt: 'image',
   linkIcon: 'https://twitter.com/CHS_MUNCH',
-  linkIcon1: 'https://instagram.com/chs_munch23',
+  text7: 'Chairs',
+  text3: 'Country Allocation',
+  text15: 'Support',
+  text9: 'Infrastructure\n',
+  text: 'MUNCH 24',
+  text13: 'Charity',
+  text11: 'Advisors',
+  text14: '',
+  text8: 'Press',
+  text6: 'Officials',
+  text17: 'Privacy Policy',
+  text1: 'Committees',
+  text4: 'Briefing Papers',
   rootClassName: '',
+  text2: 'Timetable',
+  text18: 'Technical Support',
+  text5: 'People',
+  text10: 'Information',
+  linkIcon1: 'https://instagram.com/chs_munch23',
+  text12: 'Delegates',
 }
 
 Footer.propTypes = {
   imageSrc: PropTypes.string,
-  imageAlt: PropTypes.string,
-  text: PropTypes.string,
-  text1: PropTypes.string,
-  text2: PropTypes.string,
-  text3: PropTypes.string,
-  text4: PropTypes.string,
-  text5: PropTypes.string,
-  text6: PropTypes.string,
-  text7: PropTypes.string,
-  text8: PropTypes.string,
-  text9: PropTypes.string,
-  text10: PropTypes.string,
-  text11: PropTypes.string,
-  text12: PropTypes.string,
-  text13: PropTypes.string,
-  text14: PropTypes.string,
-  text15: PropTypes.string,
   text16: PropTypes.string,
-  text17: PropTypes.string,
-  text18: PropTypes.string,
+  imageAlt: PropTypes.string,
   linkIcon: PropTypes.string,
-  linkIcon1: PropTypes.string,
+  text7: PropTypes.string,
+  text3: PropTypes.string,
+  text15: PropTypes.string,
+  text9: PropTypes.string,
+  text: PropTypes.string,
+  text13: PropTypes.string,
+  text11: PropTypes.string,
+  text14: PropTypes.string,
+  text8: PropTypes.string,
+  text6: PropTypes.string,
+  text17: PropTypes.string,
+  text1: PropTypes.string,
+  text4: PropTypes.string,
   rootClassName: PropTypes.string,
+  text2: PropTypes.string,
+  text18: PropTypes.string,
+  text5: PropTypes.string,
+  text10: PropTypes.string,
+  linkIcon1: PropTypes.string,
+  text12: PropTypes.string,
 }
 
 export default Footer
