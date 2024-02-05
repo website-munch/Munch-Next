@@ -87,7 +87,7 @@ const Footer = (props) => {
       <style jsx>
         {`
           .footer-footer {
-            height: 224px;
+            height: 22.5%;
             display: flex;
             align-items: center;
             padding-top: var(--dl-space-space-twounits);
