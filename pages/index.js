@@ -200,6 +200,75 @@ const Home = (props) => {
           imageSrc="/munch_logo-200h.png"
           rootClassName="footer-root-class-name"
         ></Footer>
+        <div
+          data-thq="slider"
+          data-navigation="true"
+          data-pagination="true"
+          className="home-slider swiper"
+        >
+          <div
+            data-thq="slider-wrapper"
+            className="home-slider-wrapper swiper-wrapper"
+          >
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide swiper-slide"
+            ></div>
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide1 swiper-slide"
+            ></div>
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide2 swiper-slide"
+            ></div>
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide3 swiper-slide"
+            ></div>
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide4 swiper-slide"
+            ></div>
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide5 swiper-slide"
+            ></div>
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide6 swiper-slide"
+            ></div>
+            <div
+              data-thq="slider-slide"
+              className="home-slider-slide7 swiper-slide"
+            ></div>
+          </div>
+          <div
+            data-thq="slider-pagination"
+            className="home-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+          >
+            <div
+              data-thq="slider-pagination-bullet"
+              className="swiper-pagination-bullet swiper-pagination-bullet-active"
+            ></div>
+            <div
+              data-thq="slider-pagination-bullet"
+              className="swiper-pagination-bullet"
+            ></div>
+            <div
+              data-thq="slider-pagination-bullet"
+              className="swiper-pagination-bullet"
+            ></div>
+          </div>
+          <div
+            data-thq="slider-button-prev"
+            className="swiper-button-prev"
+          ></div>
+          <div
+            data-thq="slider-button-next"
+            className="swiper-button-next"
+          ></div>
+        </div>
       </div>
       <style jsx>
         {`
@@ -265,7 +334,7 @@ const Home = (props) => {
             width: 100%;
             height: 16%;
             margin: auto;
-            display: flex;
+            display: none;
             position: absolute;
             align-items: flex-start;
             padding-left: 16px;
@@ -377,7 +446,7 @@ const Home = (props) => {
             width: 100%;
             height: 16%;
             margin: auto;
-            display: flex;
+            display: none;
             position: absolute;
             align-items: flex-start;
             padding-left: 16px;
@@ -480,6 +549,61 @@ const Home = (props) => {
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+          .home-slider {
+            top: 50%;
+            left: 0px;
+            right: 0px;
+            width: 50%;
+            height: 32.5%;
+            display: inline-block;
+            position: absolute;
+          }
+          .home-slider-wrapper {
+            position: relative;
+          }
+          .home-slider-slide {
+            display: flex;
+            background-size: 100%;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV849pMW8H-Z2vFsDO8yrw5mkHC1yi6036H3_7IWkgNDyAOESgSlnIFWde0d4eX6R0lQj5KXQb9FTBtGY_O3EjE9x3gaHuiNgkvki5Zf6HoezIiT2_w=w2400');
+          }
+          .home-slider-slide1 {
+            display: flex;
+            background-size: 100%;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV87Czn-mzI-5Q1azILW5OuOeXFAa67D8a_93YoIRxuAfmgAtDNm7MDAcofQdfbKi41TngKJeIXpZvH_IlDA4uDhHgwTICYtj_RjTZS3dxjtwEv5n0QY=w2400');
+          }
+          .home-slider-slide2 {
+            display: flex;
+            background-size: 100%;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV87nCemk_KlYQvRO0HAzoSr_T7Cq3JecFDD8RXz2ORPiUSvAvxY-RZ83caHgmSzCsGisAaQDRUiyDjLyped4mCxk72L1viISzkOl7YtwnIj08b-gISU=w2400');
+          }
+          .home-slider-slide3 {
+            display: flex;
+            background-size: 100%;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV86CiE8HYNoqHcif30SutD2u-yyxpMqul6CAwaErUH-q50Tf0AdfhI5qOW7q8eBVeEt9QHQndcCOyjdS5OTWorjaKSvlKg94stVSXECNXVn0JKNm9II=w2400');
+          }
+          .home-slider-slide4 {
+            display: flex;
+            background-size: 100%;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV84MAy78KGLm0_v7zUj6siSJ0vMDmN_Mb5TpmhMM1P_S3iycbJyxlZEWJhkKIlxtPBhi7v38FJxL9s8t79Ns0Dfvyxj7RkdZDyUV1Xj0FSp21zgkioY=w2400');
+          }
+          .home-slider-slide5 {
+            display: flex;
+            background-size: 100%;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV87MIrGYFVhDoJPVl78vEBmnROtjqsBld4Qeo1BBcp65TjbIQpQORCaJLkkc2Npwaph9GfVqvkr8tWG6flFL_QPyFLCmPGtkrC5iu_Vi7QnoJFT1-bs=w2400');
+          }
+          .home-slider-slide6 {
+            display: flex;
+            background-size: 100%;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV85q3l_QEx1Y79pzLtKAXMExN1pUsfNuWwSnBP7vQT9CgL-6FerGEgPWWBKk4aIAG2z2h9z5FaWr1uVpLDihI_qqJ3G59e4sNSrClO1b4RS_geRWthA=w2400');
+          }
+          .home-slider-slide7 {
+            display: flex;
+            background-size: 100%;
+            background-image: url('https://lh3.googleusercontent.com/pw/ABLVV85vL0499FA_B5tePctTYqSU12TqZCW0udL2ikXVQb5-1QJWSx2eD5CPGyLjkAJf0WNKtpuRe4RCnCooYMcQkKAC1J_1O2TtLt26_0ixTn0JN4n8jcM=w2400');
+          }
+          .home-slider-pagination {
+            display: block;
           }
           @media (max-width: 1600px) {
             .home-text {

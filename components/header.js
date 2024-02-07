@@ -84,6 +84,14 @@ const Header = (props) => {
             margin: auto;
             position: absolute;
           }
+          .header-root-class-name1 {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: auto;
+            margin: auto;
+            position: absolute;
+          }
           @media (max-width: 1200px) {
             .header-header {
               height: 7.5%;

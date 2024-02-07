@@ -253,8 +253,24 @@ const Footer = (props) => {
             margin-right: auto;
             margin-bottom: auto;
           }
+          .footer-root-class-name1 {
+            top: 82.5%;
+            left: 0px;
+            right: 0px;
+            width: var(--dl-size-size-maxwidth);
+            height: 15%;
+            position: absolute;
+            max-width: var(--dl-size-size-maxwidth);
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+          }
           @media (max-width: 1600px) {
             .footer-root-class-name {
+              top: 85%;
+            }
+            .footer-root-class-name1 {
               top: 85%;
             }
           }
@@ -280,12 +296,22 @@ const Footer = (props) => {
               height: auto;
               max-width: auto;
             }
+            .footer-root-class-name1 {
+              top: 90%;
+              width: auto;
+              height: auto;
+              max-width: auto;
+            }
           }
           @media (max-width: 991px) {
             .footer-container1 {
               align-items: center;
             }
             .footer-root-class-name {
+              top: 88.75%;
+              width: 100%;
+            }
+            .footer-root-class-name1 {
               top: 88.75%;
               width: 100%;
             }
